@@ -5,14 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 
 <body>
 
+    <div>
+        <button class="color-button" onclick="setColor('white')" style="background-color: white;">White</button>
+        <button class="color-button" onclick="setColor('black')" style="background-color: white;">Black</button>
+        <button class="color-button" onclick="setColor('red')" style="background-color: red;">Red</button>
+        <button class="color-button" onclick="setColor('green')" style="background-color: green;">Green</button>
+        <button class="color-button" onclick="setColor('blue')" style="background-color: blue;">Blue</button>
+        <button id="clear-button" onclick="clearGrid()">Clear</button>
+    </div>
+    <div class="grid" id="grid-container"></div>
 
 
+    <script src="script.js"></script>
 </body>
+
 
 
 
